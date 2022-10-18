@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bayraktar</title>
+    <head>
+      <link rel="stylesheet" href="./style.css" />
+      <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+      ></script>
+      <script src="./js/script.js"></script>
+    </head>
+  </head>
+  <body>
+    <form action="/">
+      <div class="buttons">
+        <div id="direction">0</div>
+        <div class="btn-forward">
+          <button
+            type="submit"
+            class="btn"
+            id="forward"
+            onclick="makeTurn('forward')"
+          >
+            Forward
+          </button>
+        </div>
+        <div class="btn-left-right">
+          <button
+            type="submit"
+            class="btn"
+            id="left"
+            onclick="makeTurn('left')"
+          >
+            Left
+          </button>
+          <button
+            type="submit"
+            class="btn"
+            id="right"
+            onclick="makeTurn('right')"
+          >
+            Right
+          </button>
+        </div>
+        <div class="btn-down">
+          <button
+            type="submit"
+            class="btn"
+            id="back"
+            onclick="makeTurn('down')"
+          >
+            Down
+          </button>
+        </div>
+        <button type="submit" class="btn" id="fire" onclick="makeTurn('fire')">
+          Fire
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
