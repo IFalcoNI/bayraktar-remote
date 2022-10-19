@@ -10,9 +10,18 @@
         crossorigin='anonymous'
       ></script>
       <script src='./js/script.js'></script>
+      <script src='./js/joy.js'></script>
+      <script>
+        $("#btn-form").submit(function(e) { e.preventDefault(); });
+      </script>
     </head>
   </head>
   <body>
+    <label class='switch'>
+      <input type='checkbox' checked onclick='changeMode()'/>
+      <span class='slider round'></span>
+    </label>
+
     <form id='btn-form'>
       <div class='double-forward'>
         <button
@@ -73,8 +82,14 @@
         </button>
       </div>
     </form>
+    <div id='myJoystick'>
+      <div id='joy3Div'></div>
+      {{! <button type='submit' class='btn' id='fire' value='fire'> }}
+    </div>
     <script>
-      $("#btn-form").submit(function(e) { e.preventDefault(); });
+      let joy3Param = { "title": "joystick3" }; let Joy3 = new
+      JoyStick('joy3Div', joy3Param);
+      setInterval(function(){sendPost(Joy3.GetDir())}, 300);
     </script>
   </body>
 </html>
