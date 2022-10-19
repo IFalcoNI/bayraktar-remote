@@ -139,6 +139,15 @@ button {
   border-width: 0 0 50px 50px;
   border-color: transparent transparent #181818 transparent;
 }
+#fired {
+  text-align: center;
+ font-weight: bold;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 0, 0, 0.795);
+  border-radius: 50%;
+  border: 5px solid rgba(0, 0, 0, 0.7);
+}
 .toggle {
   position: absolute;
   top: 10px;
