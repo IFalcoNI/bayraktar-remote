@@ -1,8 +1,10 @@
+* {
+  touch-action: manipulation;
+}
 body {
   display: flex;
   justify-content: center;
   align-items: center;
-  touch-action: manipulation;
   background-color: rgb(37, 68, 36);
 }
 form {
