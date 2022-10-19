@@ -1,6 +1,6 @@
 <html>
   <head>
-    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <meta name='viewport' content='width=device-width, user-scalable=no' />
     <title>Bayraktar Control</title>
     <head>
       <link rel='stylesheet' href='./style.css' />
@@ -14,27 +14,52 @@
   </head>
   <body>
     <form id='btn-form'>
-        <div class='btn-forward'>
-          <button type='submit' class='btn' id='forward-left' value="forward-left">
-          <button type='submit' class='btn' id='forward' value="forward">
-          <button type='submit' class='btn' id='forward-right' value="forward-right">
-          </button>
-        </div>
-        <div class='btn-left-right'>
-          <button type='submit' class='btn' id='left' value="left">
-          </button>
-        <button type='submit' class='btn' id='fire' value="fire">
+      <div class='double-forward'>
+        <button type='submit' class='btn' id='double-forward' value='double-forward'>
         </button>
-          <button type='submit' class='btn' id='right' value="right">
+        <div class='btn-forward'>
+          <button
+            type='submit'
+            class='btn'
+            id='forward-left'
+            value='forward-left'
+          > </button>
+          <button type='submit' class='btn' id='forward' value='forward'>
+          </button>
+          <button
+            type='submit'
+            class='btn'
+            id='forward-right'
+            value='forward-right'
+          > </button>
+        </div>
+      </div>
+      <div class='double-left-right'>
+        <button type='submit' class='btn' id='double-left' value='double-left'> </button>
+        <div class='btn-left-right'>
+          <button type='submit' class='btn' id='left' value='left'>
+          </button>
+          <button type='submit' class='btn' id='fire' value='fire'>
+          </button>
+          <button type='submit' class='btn' id='right' value='right'>
           </button>
         </div>
+        <button type='submit' class='btn' id='double-right' value='double-right'> </button>
+      </div>
+      <div class='double-back'>
         <div class='btn-back'>
-          <button type='submit' class='btn' id='back-left' value="back-left">
-          <button type='submit' class='btn' id='back' value="back">
-          <button type='submit' class='btn' id='back-right' value="back-right">
-
+          <button
+            type='submit'
+            class='btn'
+            id='back-left'
+            value='back-left'
+          ></button>
+          <button type='submit' class='btn' id='back' value='back'> </button>
+          <button type='submit' class='btn' id='back-right' value='back-right'>
           </button>
         </div>
+        <button type='submit' class='btn' id='double-back' value='double-back'>
+        </button>
       </div>
     </form>
   </body>
