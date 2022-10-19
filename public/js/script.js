@@ -1,5 +1,5 @@
 $(() => {
-    $("button").click(function () {
+    $("button").click( function() {
         let clicked = $(this).val();
         sendPost(clicked)
     });

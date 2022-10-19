@@ -28,6 +28,7 @@ app.post("/", (req, res) => {
 app.post("/cmd", (req, res) => {
     text = req.body.cmd
     client.publish('game/control', text)
+    res.sendStatus(200);
     console.log("Message: " + text + ' sent');
 })
 
