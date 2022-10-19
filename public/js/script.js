@@ -2,6 +2,9 @@ const makeTurn = (direction) => {
     let dir = document.getElementById('direction')
     dir.innerHTML = direction
 }
+$('form').on('submit', function (e) {
+    e.preventDefault();
+});
 $(document).ready(() => {
     $("#forward").click(() => {
         $.post("/forward", {

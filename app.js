@@ -2,7 +2,6 @@ const mqtt = require('mqtt');
 let client = mqtt.connect("mqtt://test.mosquitto.org", 1883);
 const express = require("express")
 const path = require("path");
-const { log } = require('console');
 //
 const app = express();
 const port = process.env.PORT || 3000;
