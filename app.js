@@ -5,7 +5,7 @@ const path = require("path");
 const hbs = require('hbs')
 //
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 //
 
 // View Engine Setup
@@ -29,7 +29,7 @@ app.post("/cmd", (req, res) => {
     text = req.body.cmd
     client.publish('game/control', text)
     res.sendStatus(200);
-    console.log("Message: " + text + ' sent');
+    console.log("Сommand: " + text + ' sent');
 })
 
 // Server Setup
