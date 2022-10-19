@@ -25,32 +25,7 @@ app.post("/", (req, res) => {
     text = req.body.cmd
     console.log(text);
 })
-app.post("/forward", (req, res) => {
-
-    text = req.body.cmd
-    client.publish('game/control', text)
-    console.log("Message: " + text + ' sent');
-})
-app.post("/back", (req, res) => {
-
-    text = req.body.cmd
-    client.publish('game/control', text)
-    console.log("Message: " + text + ' sent');
-})
-app.post("/left", (req, res) => {
-
-    text = req.body.cmd
-    client.publish('game/control', text)
-    console.log("Message: " + text + ' sent');
-})
-app.post("/right", (req, res) => {
-
-    text = req.body.cmd
-    client.publish('game/control', text)
-    console.log("Message: " + text + ' sent');
-})
-app.post("/fire", (req, res) => {
-
+app.post("/cmd", (req, res) => {
     text = req.body.cmd
     client.publish('game/control', text)
     console.log("Message: " + text + ' sent');

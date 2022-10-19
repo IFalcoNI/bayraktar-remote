@@ -1,32 +1,11 @@
-
-$('form').on('submit', function (e) {
-    e.preventDefault();
+$(() => {
+    $("button").click(function () {
+        let clicked = $(this).val();
+        sendPost(clicked)
+    });
 });
-$(document).ready(() => {
-    $('#forward').click(() => {
-        $.post('/forward', {
-            cmd: 'forward'
-        })
-    });
-    $('#back').click(() => {
-        $.post('/back', {
-            cmd: 'back'
-        })
-    });
-    $('#left').click(() => {
-        $.post('/left', {
-            cmd: 'left'
-        })
-    });
-    $('#right').click(() => {
-        $.post('/right', {
-            cmd: 'right'
-        })
-    });
-    $('#fire').click(() => {
-        $.post('/fire', {
-            cmd: 'fire'
-        })
-    });
-
-})
+const sendPost = (props) => {
+    $.post(`/cmd`, {
+        cmd: `${props}`
+    })
+}

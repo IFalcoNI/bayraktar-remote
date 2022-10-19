@@ -8,23 +8,14 @@ body {
   background-color: rgb(37, 68, 36);
 }
 form {
+  padding: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(27, 27, 27, 0.213);
+  justify-content: space-between;
+  background-color: rgba(114, 114, 114, 0.2);
   border-radius: 50%;
   border: 5px solid rgba(0, 0, 0, 0.6);
-}
-button,
-input[type='submit'],
-input[type='reset'] {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
 }
 button {
   all: unset;
@@ -35,9 +26,13 @@ button {
 .btn {
   margin: 5px;
 }
-.btn-left-right {
+.btn-forward,
+.btn-left-right,
+.btn-back {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 #forward {
   width: 0;
@@ -74,4 +69,32 @@ button {
   border-radius: 50%;
   margin: 20px;
   border: 5px solid rgba(0, 0, 0, 0.7);
+}
+#forward-left {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 90px 90px 0 0;
+  border-color: #181818 transparent transparent transparent;
+}
+#forward-right {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 90px 90px 0;
+  border-color: transparent #181818 transparent transparent;
+}
+#back-left {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 90px 0 0 90px;
+  border-color: transparent transparent transparent #181818;
+}
+#back-right {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 90px 90px;
+  border-color: transparent transparent #181818 transparent;
 }
