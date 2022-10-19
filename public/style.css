@@ -3,13 +3,13 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: rgb(178, 178, 178);
+  background-color: rgb(181, 181, 181);
 }
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(101, 101, 101);
+  background-color: rgba(40, 40, 40, 0.213);
   border-radius: 50%;
 }
 button {
@@ -29,33 +29,33 @@ button {
   height: 0;
   border-style: solid;
   border-width: 0 70px 130px 70px;
-  border-color: transparent transparent #416cc9 transparent;
+  border-color: transparent transparent #352b80 transparent;
 }
 #back {
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 130px 70px 0 70px;
-  border-color: #0000ff transparent transparent transparent;
+  border-color: #352b80 transparent transparent transparent;
 }
 #left {
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 65px 140px 65px 0;
-  border-color: transparent #0000ff transparent transparent;
+  border-color: transparent #352b80 transparent transparent;
 }
 #right {
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 65px 0 65px 140px;
-  border-color: transparent transparent transparent #0000ff;
+  border-color: transparent transparent transparent #352b80;
 }
 #fire {
   width: 140px;
   height: 130px;
-  background: rgba(255, 0, 0, 0.6);
+  background: rgba(255, 0, 0, 0.795);
   border-radius: 50%;
   margin: 20px;
 }
