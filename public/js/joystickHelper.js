@@ -1,7 +1,7 @@
-let joy3Param = { "title": "joystick3" };
-let Joy3 = new JoyStick('joy3Div', joy3Param); let intervalId;
+let joyParam = { "title": "joystick" };
+let Joy = new JoyStick('joyDiv', joyParam); let intervalId;
 const handleJoystick = () => {
-    intervalId = setInterval(function () { sendPost(`${Joy3.GetX()}|${Joy3.GetY()}`) }, 200);
+    intervalId = setInterval(function () { sendPost(`${Joy.GetX()}|${Joy.GetY()}`) }, 200);
 }
 handleJoystick()
-      // setInterval(function(){sendPost(Joy3.GetDir())}, 300);
+      // setInterval(function(){sendPost(Joy.GetDir())}, 300);

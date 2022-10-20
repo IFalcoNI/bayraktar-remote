@@ -79,7 +79,7 @@ var JoyStick = (function (container, parameters, callback) {
         internalLineWidth = (typeof parameters.internalLineWidth === "undefined" ? 2 : parameters.internalLineWidth),
         internalStrokeColor = (typeof parameters.internalStrokeColor === "undefined" ? "#003300" : parameters.internalStrokeColor),
         externalLineWidth = (typeof parameters.externalLineWidth === "undefined" ? 2 : parameters.externalLineWidth),
-        externalStrokeColor = (typeof parameters.externalStrokeColor === "undefined" ? "#008000" : parameters.externalStrokeColor),
+        externalStrokeColor = (typeof parameters.externalStrokeColor === "undefined" ? "#009900" : parameters.externalStrokeColor),
         autoReturnToCenter = (typeof parameters.autoReturnToCenter === "undefined" ? true : parameters.autoReturnToCenter);
 
     callback = callback || function (StickStatus) { };
@@ -103,7 +103,7 @@ var JoyStick = (function (container, parameters, callback) {
     var circumference = 2 * Math.PI;
     var internalRadius = (canvas.width - ((canvas.width / 2) + 10)) / 2;
     var maxMoveStick = internalRadius + 5;
-    var externalRadius = internalRadius + 30;
+    var externalRadius = internalRadius + 50;
     var centerX = canvas.width / 2;
     var centerY = canvas.height / 2;
     var directionHorizontalLimitPos = canvas.width / 10;

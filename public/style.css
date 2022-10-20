@@ -174,36 +174,11 @@ button {
   padding: 10px;
 }
 /* Joystick */
-.row {
-  display: inline-flex;
-  clear: both;
-}
-.columnLateral {
-  float: left;
-  width: 15%;
-  min-width: 300px;
-}
-.columnCetral {
-  float: left;
-  width: 70%;
-  min-width: 300px;
-}
-#joy2Div {
-  width: 200px;
-  height: 200px;
-  margin: 50px;
-}
-#joystick {
-  border: 1px solid #ff0000;
-}
-#joystick2 {
-  border: 1px solid #0000ff;
-}
-#joy3Div {
+#joyDiv {
   /* display: none; */
   width: 250px;
   height: 250px;
-  margin: 50px;
+  margin: 40px;
 }
 #myJoystick {
   display: flex;
