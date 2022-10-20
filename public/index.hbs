@@ -116,7 +116,7 @@
     <script>
       let joy3Param = { "title": "joystick3" }; let Joy3 = new
       JoyStick('joy3Div', joy3Param);
-      setInterval(function(){sendPost(`x:${Joy3.GetX()}|y:${Joy3.GetY()}`)}, 300);
+      setInterval(function(){sendPost(`${Joy3.GetX()}|${Joy3.GetY()}`)}, 300);
       // setInterval(function(){sendPost(Joy3.GetDir())}, 300);
     </script>
     <script>

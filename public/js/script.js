@@ -5,9 +5,11 @@
 //     });
 // });
 const sendPost = (props) => {
-    $.post(`/cmd`, {
-        cmd: `${props}`
-    })
+    if (props !== '') {
+        $.post(`/cmd`, {
+            cmd: `${props}`
+        })
+    }
 }
 const changeMode = () => {
     let btn =
