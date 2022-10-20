@@ -111,7 +111,12 @@
     </form>
     <div id='myJoystick'>
       <div id='joy3Div'></div>
-      <button class='btn' id='fired' onclick='sendPost("fire")'>FIRE</button>
+      <button
+        class='btn'
+        id='fired'
+        value='fire'
+        onclick='sendPost(value)'
+      >FIRE</button>
     </div>
     <script>
       let joy3Param = { "title": "joystick3" }; let Joy3 = new
