@@ -1,12 +1,19 @@
 * {
   touch-action: manipulation;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
+  background-image: url('./assets/camo-bg.jpeg');
+}
+.controls {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(37, 68, 36);
+  background-color: rgba(33, 44, 55, 0.9);
+  width: 100%;
+  height: 100%;
 }
 form {
   margin: 0;
@@ -14,7 +21,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(114, 114, 114, 0.2);
+  background-color: rgba(114, 114, 114, 0.5);
   border-radius: 50%;
   border: 5px solid rgba(0, 0, 0, 0.6);
 }
@@ -22,6 +29,13 @@ button {
   all: unset;
   transition: none;
   cursor: pointer;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .btn {
