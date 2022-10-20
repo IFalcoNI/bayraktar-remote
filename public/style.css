@@ -141,7 +141,7 @@ button {
 }
 #fired {
   text-align: center;
- font-weight: bold;
+  font-weight: bold;
   width: 60px;
   height: 60px;
   background: rgba(255, 0, 0, 0.795);
