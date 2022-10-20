@@ -11,9 +11,7 @@
       ></script>
       <script src='./js/script.js'></script>
       <script src='./js/joy.js'></script>
-      <script>
-        $("#btn-form").submit(function(e) { e.preventDefault(); });
-      </script>
+
     </head>
   </head>
   <body>
@@ -25,45 +23,60 @@
     <form id='btn-form'>
       <div class='double-forward'>
         <button
-          type='submit'
           class='btn'
           id='double-forward'
           value='double-forward'
+          onclick='sendPost(value)'
         >
         </button>
         <div class='btn-forward'>
           <button
-            type='submit'
             class='btn'
             id='forward-left'
             value='forward-left'
+            onclick='sendPost(value)'
           > </button>
-          <button type='submit' class='btn' id='forward' value='forward'>
+          <button
+            class='btn'
+            id='forward'
+            value='forward'
+            onclick='sendPost(value)'
+          >
           </button>
           <button
-            type='submit'
             class='btn'
             id='forward-right'
             value='forward-right'
+            onclick='sendPost(value)'
           > </button>
         </div>
       </div>
       <div class='double-left-right'>
-        <button type='submit' class='btn' id='double-left' value='double-left'>
+        <button
+          class='btn'
+          id='double-left'
+          value='double-left'
+          onclick='sendPost(value)'
+        >
         </button>
         <div class='btn-left-right'>
-          <button type='submit' class='btn' id='left' value='left'>
+          <button class='btn' id='left' value='left' onclick='sendPost(value)'>
           </button>
-          <button type='submit' class='btn' id='fire' value='fire'>
+          <button class='btn' id='fire' value='fire' onclick='sendPost(value)'>
           </button>
-          <button type='submit' class='btn' id='right' value='right'>
+          <button
+            class='btn'
+            id='right'
+            value='right'
+            onclick='sendPost(value)'
+          >
           </button>
         </div>
         <button
-          type='submit'
           class='btn'
           id='double-right'
           value='double-right'
+          onclick='sendPost(value)'
         > </button>
       </div>
       <div class='double-back'>
@@ -71,16 +84,28 @@
           <button
             class='btn'
             id='back-left'
-            onclick='sendPost("back-left")'
+            value='back-left'
+            onclick='sendPost(value)'
           ></button>
-          <button class='btn' id='back' onclick='sendPost("back")'></button>
+          <button
+            class='btn'
+            id='back'
+            value='back'
+            onclick='sendPost(value)'
+          ></button>
           <button
             class='btn'
             id='back-right'
-            onclick='sendPost("back-right")'
+            value='back-right'
+            onclick='sendPost(value)'
           ></button>
         </div>
-        <button class='btn' id='double-back' onclick="sendPost('double-back')">
+        <button
+          class='btn'
+          id='double-back'
+          value='double-back'
+          onclick='sendPost(value)'
+        >
         </button>
       </div>
     </form>
@@ -92,6 +117,9 @@
       let joy3Param = { "title": "joystick3" }; let Joy3 = new
       JoyStick('joy3Div', joy3Param);
       setInterval(function(){sendPost(Joy3.GetDir())}, 300);
+    </script>
+    <script>
+      $("button").click(function(e) { e.preventDefault(); });
     </script>
   </body>
 </html>
