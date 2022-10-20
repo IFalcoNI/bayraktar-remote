@@ -124,6 +124,7 @@
       const handleJoystick = () => {
       intervalId = setInterval(function(){sendPost(`${Joy3.GetX()}|${Joy3.GetY()}`)}, 200);
       }
+      handleJoystick()
       // setInterval(function(){sendPost(Joy3.GetDir())}, 300);
     </script>
     <script>
