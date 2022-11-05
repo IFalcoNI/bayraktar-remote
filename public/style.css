@@ -5,23 +5,23 @@
   padding: 0;
 }
 body {
+  background-color: rgba(33, 44, 55, 0.9);
+  background-size: cover;
+}
+html {
   background: url('./assets/camo-bg.jpeg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
-html{
-  background-color: #181818;
+  background-color: rgba(33, 44, 55);
 }
 .controls {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(33, 44, 55, 0.9);
   width: 100%;
   height: 100%;
-  z-index: 999;
 }
 .controlsContainer {
   position: relative;
