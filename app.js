@@ -20,10 +20,10 @@ app.get('/', function (req, res) {
     res.render('public/index');
 });
 // Handling request
-app.post("/", (req, res) => {
-    text = req.body.cmd
-    console.log(text);
-})
+// app.post("/", (req, res) => {
+//     text = req.body.cmd
+//     console.log(text);
+// })
 app.post("/cmd", (req, res) => {
     text = req.body.cmd
     client.publish('game/control', text)

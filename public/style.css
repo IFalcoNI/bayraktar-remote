@@ -20,6 +20,10 @@ body {
   height: 100%;
   z-index: 999;
 }
+.controlsContainer {
+  position: relative;
+  display: flex;
+}
 form {
   margin: 0;
   display: none;
@@ -183,6 +187,7 @@ button {
   width: 250px;
   height: 250px;
   margin: 40px;
+  z-index: 100;
 }
 #myJoystick {
   display: flex;
@@ -231,6 +236,53 @@ button {
   transition: 0.4s;
 }
 
+/* The slider itself */
+.speedControl {
+  transform: rotate(270deg);
+  width: 250px;
+  height: 30px; /* Specified height */
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.8; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
+  transition: opacity 0.2s;
+  border-radius: 16px;
+  z-index: 100;
+}
+
+/* Mouse-over effects */
+.speedControl:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.speedControl::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 70px; /* Set a specific slider handle width */
+  height: 70px; /* Slider handle height */
+  background: #67dd00; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 50%;
+  border: 2px solid #157754;
+}
+
+.speedControl::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #67dd00; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+/* Rounded sliders */
+.speedControl.round {
+  border-radius: 34px;
+}
+
+.speedControl.round:before {
+  border-radius: 50%;
+}
 input:checked + .slider {
   background-color: #15cd36;
 }
@@ -249,7 +301,6 @@ input:checked + .slider:before {
 .slider.round {
   border-radius: 34px;
 }
-
 .slider.round:before {
   border-radius: 50%;
 }
@@ -268,4 +319,13 @@ input:checked + .slider:before {
 a {
   color: rgba(255, 255, 255, 0.37);
   text-decoration: none;
+}
+
+@media screen and (max-width: 485px) {
+  .speedControl {
+    position: absolute;
+    width: 200px;
+    bottom: 100px;
+    left: -50px;
+  }
 }
