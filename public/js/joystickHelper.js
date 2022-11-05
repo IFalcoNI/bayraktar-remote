@@ -3,7 +3,7 @@ let Joy = new JoyStick('joyDiv', joyParam);
 let intervalId;
 const handleJoystick = () => {
     intervalId = setInterval(function () {
-        if (Joy.GetX() != '0' || Joy.GetY() != '0') {
+        if (Joy.GetX() !== '0' || Joy.GetY() !== '0') {
             sendPost(`${Joy.GetX()}|${Joy.GetY()}`)
         }
     }

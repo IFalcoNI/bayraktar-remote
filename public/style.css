@@ -11,6 +11,9 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+html{
+  background-color: #181818;
+}
 .controls {
   display: flex;
   justify-content: center;
