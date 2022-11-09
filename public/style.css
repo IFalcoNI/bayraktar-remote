@@ -7,6 +7,7 @@
 body {
   background-color: rgba(33, 44, 55, 0.9);
   background-size: cover;
+  font-family: 'Montserrat', sans-serif;
 }
 html {
   background: url('./assets/camo-bg.jpeg') no-repeat center center fixed;
@@ -29,7 +30,7 @@ html {
 }
 form {
   margin: 0;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -168,7 +169,8 @@ button {
   border-width: 0 0 50px 50px;
   border-color: transparent transparent #181818 transparent;
 }
-#fired {
+#fired,
+#target {
   text-align: center;
   font-weight: bold;
   width: 60px;
@@ -176,6 +178,24 @@ button {
   background: rgba(255, 0, 0, 0.795);
   border-radius: 50%;
   border: 5px solid rgba(0, 0, 0, 0.7);
+}
+#target {
+  background-color: #67dd00;
+  color: #181818bd;
+}
+#btn-mode {
+  display: none;
+  flex-direction: column;
+  /* justify-content:space-between; */
+  align-items: center;
+}
+#btn-form{
+  margin-bottom: 40px;
+}
+.fireMode {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
 }
 .toggle {
   position: absolute;

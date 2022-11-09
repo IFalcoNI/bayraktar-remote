@@ -11,8 +11,8 @@ const sendPost = (props) => {
 }
 const changeMode = () => {
     let btn =
-        document.getElementById("btn-form"); let joystick =
-            document.getElementById("myJoystick"); if (btn.style.display === "flex") { btn.style.display = "none"; joystick.style.display = "flex"; handleJoystick() } else {
-                btn.style.display = "flex"; joystick.style.display = "none"; clearInterval(intervalId)
-            }
+        document.getElementById("btn-mode");
+    let joystick = document.getElementById("myJoystick"); if (btn.style.display === "flex") { btn.style.display = "none"; joystick.style.display = "flex"; handleJoystick() } else {
+        btn.style.display = "flex"; joystick.style.display = "none"; clearInterval(intervalId)
+    }
 }

@@ -33,113 +33,129 @@
           id='speedRange'
         />
       </div>
-      <form id='btn-form'>
-        <div class='double-forward'>
-          <button
-            class='btn'
-            id='double-forward'
-            value='forward-forward'
-            onclick='sendPost(value)'
-          >
-          </button>
-          <div class='btn-forward'>
+      <div id="btn-mode">
+        <form id='btn-form'>
+          <div class='double-forward'>
             <button
               class='btn'
-              id='forward-left'
-              value='forward-left'
+              id='double-forward'
+              value='forward-forward'
+              onclick='sendPost(value)'
+            >
+            </button>
+            <div class='btn-forward'>
+              <button
+                class='btn'
+                id='forward-left'
+                value='forward-left'
+                onclick='sendPost(value)'
+              > </button>
+              <button
+                class='btn'
+                id='forward'
+                value='forward'
+                onclick='sendPost(value)'
+              >
+              </button>
+              <button
+                class='btn'
+                id='forward-right'
+                value='forward-right'
+                onclick='sendPost(value)'
+              > </button>
+            </div>
+          </div>
+          <div class='double-left-right'>
+            <button
+              class='btn'
+              id='double-left'
+              value='left-left'
+              onclick='sendPost(value)'
+            >
+            </button>
+            <div class='btn-left-right'>
+              <button
+                class='btn'
+                id='left'
+                value='left'
+                onclick='sendPost(value)'
+              >
+              </button>
+              <button
+                class='btn'
+                id='fire'
+                value='fire'
+                onclick='sendPost(value)'
+              >
+              </button>
+              <button
+                class='btn'
+                id='right'
+                value='right'
+                onclick='sendPost(value)'
+              >
+              </button>
+            </div>
+            <button
+              class='btn'
+              id='double-right'
+              value='right-right'
               onclick='sendPost(value)'
             > </button>
-            <button
-              class='btn'
-              id='forward'
-              value='forward'
-              onclick='sendPost(value)'
-            >
-            </button>
-            <button
-              class='btn'
-              id='forward-right'
-              value='forward-right'
-              onclick='sendPost(value)'
-            > </button>
           </div>
-        </div>
-        <div class='double-left-right'>
-          <button
-            class='btn'
-            id='double-left'
-            value='left-left'
-            onclick='sendPost(value)'
-          >
-          </button>
-          <div class='btn-left-right'>
+          <div class='double-back'>
+            <div class='btn-back'>
+              <button
+                class='btn'
+                id='back-left'
+                value='back-left'
+                onclick='sendPost(value)'
+              ></button>
+              <button
+                class='btn'
+                id='back'
+                value='back'
+                onclick='sendPost(value)'
+              ></button>
+              <button
+                class='btn'
+                id='back-right'
+                value='back-right'
+                onclick='sendPost(value)'
+              ></button>
+            </div>
             <button
               class='btn'
-              id='left'
-              value='left'
-              onclick='sendPost(value)'
-            >
-            </button>
-            <button
-              class='btn'
-              id='fire'
-              value='fire'
-              onclick='sendPost(value)'
-            >
-            </button>
-            <button
-              class='btn'
-              id='right'
-              value='right'
+              id='double-back'
+              value='back-back'
               onclick='sendPost(value)'
             >
             </button>
           </div>
-          <button
-            class='btn'
-            id='double-right'
-            value='right-right'
-            onclick='sendPost(value)'
-          > </button>
-        </div>
-        <div class='double-back'>
-          <div class='btn-back'>
-            <button
-              class='btn'
-              id='back-left'
-              value='back-left'
-              onclick='sendPost(value)'
-            ></button>
-            <button
-              class='btn'
-              id='back'
-              value='back'
-              onclick='sendPost(value)'
-            ></button>
-            <button
-              class='btn'
-              id='back-right'
-              value='back-right'
-              onclick='sendPost(value)'
-            ></button>
-          </div>
-          <button
-            class='btn'
-            id='double-back'
-            value='back-back'
-            onclick='sendPost(value)'
-          >
-          </button>
-        </div>
-      </form>
-      <div id='myJoystick'>
-        <div id='joyDiv'></div>
+        </form>
         <button
           class='btn'
-          id='fired'
-          value='fire'
-          onclick='sendPost(value)'
-        >FIRE</button>
+          id='target'
+          value='targetMode'
+          onclick='sendPost(value);'
+        >MODE</button>
+      </div>
+      <div id='myJoystick'>
+        <div id='joyDiv'></div>
+        <div class='fireMode'>
+          <button
+            class='btn'
+            id='target'
+            value='targetMode'
+            onclick='sendPost(value);'
+          >MODE</button>
+          <button
+            class='btn'
+            id='fired'
+            value='fire'
+            onclick='sendPost(value)'
+          ></button>
+        </div>
       </div>
     </div>
 
